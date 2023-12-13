@@ -1,0 +1,140 @@
+/* spacing on all sections */
+body {
+    background-color: #08a4bf;
+  }
+
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+    
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('./image/main.jpg');
+    background-size:cover;
+    position:relative;
+    padding: 0;
+    margin: 0;
+}
+/* text css above hero image*/
+.hero_title {
+    padding-top: 10rem;
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.image_about {
+    width: 100%;
+}
+
+.navbarDark {
+    background: #003463;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #ad1d3f;
+}
+.servicesText:hover {
+    border: 1px solid #ad1d3f;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-youtube:hover,.fa-instagram:hover,.fa-github:hover,.fa-linkedin:hover {
+    color: #ad1d3f;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #003463;
+    text-align: center;
+}
+
+/* skills */
+
+.card-deck .card {
+    width: 95%;
+  }
+  
+  .card-deck {
+    display: flex;
+    justify-content: center;
+    flex-flow: nowrap;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .image-icons {
+    width: 50px;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+  
+  .container-box {
+    width: 80%;
+    background-color: transparent;
+    position: relative;
+    z-index: 9;
+  }
+  
+  @media only screen and (max-width: 786px) {
+    .card-deck {
+      flex-direction: row;
+      flex-flow: wrap;
+    }
+  }
+  
+  .techskills {
+    animation-fill-mode: both;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: techskillanimation;
+  }
+  
+  @keyframes techskillanimation {
+    0% {
+      opacity: 0;
+      transform: translate3d(100%, 0px, 0px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
